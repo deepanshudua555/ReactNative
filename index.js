@@ -1,6 +1,6 @@
-import { app } from "./server/app.js";
+import { app } from "./app.js";
 import { config } from "dotenv";
-import { connectDatabase } from "./server/config/database.js";
+import { connectDatabase } from "./config/database.js";
 import cloudinary from "cloudinary";
 
 config({

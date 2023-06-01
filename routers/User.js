@@ -12,8 +12,8 @@ import {
   updateProfile,
   updateTask,
   verify,
-} from "../server/controllers/User.js";
-import { isAuthenticated } from "../server/middleware/auth.js";
+} from "../controllers/User.js";
+import { isAuthenticated } from "../middleware/auth.js";
 
 const router = express.Router();
 
