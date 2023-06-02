@@ -22,7 +22,7 @@ export const register = async (req, res) => {
 
     const mycloud = await cloudinary.v2.uploader.upload(avatar);
 
-    // fs.rmSync("./tmp", { recursive: true });
+    fs.rmSync("./tmp", { recursive: true });
 
     user = await User.create({
       name,
@@ -204,7 +204,7 @@ export const updateProfile = async (req, res) => {
 
       const mycloud = await cloudinary.v2.uploader.upload(avatar);
 
-      // fs.rmSync("./tmp", { recursive: true });
+      fs.rmSync("./tmp", { recursive: true });
 
       user.avatar = {
         public_id: mycloud.public_id,
